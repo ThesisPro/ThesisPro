@@ -38,12 +38,29 @@
             padding: 40px 20px;
             text-align: center;
         }
-        .services, .testimonials, .contact {
+        .services, .testimonials, .contact, .blog {
             background-color: white;
             margin: 20px auto;
             max-width: 1000px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             padding: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            text-align: left;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
         footer {
             background-color: #343a40;
@@ -51,6 +68,18 @@
             text-align: center;
             padding: 15px;
             margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .hero {
+                padding: 40px 20px;
+            }
+            .services, .testimonials, .contact, .blog {
+                padding: 20px 10px;
+            }
         }
     </style>
 </head>
@@ -64,6 +93,7 @@
 <nav>
     <a href="#services">Services</a>
     <a href="#testimonials">Testimonials</a>
+    <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
 </nav>
 
@@ -89,9 +119,35 @@
     <blockquote>"Excellent service for data analysis and literature review. Very responsive and cooperative." – Dr. R. Khan</blockquote>
 </section>
 
+<section id="blog" class="section blog">
+    <h2>Latest from Our Blog</h2>
+    <div style="max-width: 1000px; margin: auto;">
+        <article style="margin-bottom: 30px;">
+            <h3>🧠 Writing the Perfect Thesis Proposal: A Step-by-Step Guide</h3>
+            <p>Learn the structure, tips, and common pitfalls in writing a compelling thesis proposal for medical research.</p>
+        </article>
+        <article style="margin-bottom: 30px;">
+            <h3>📊 Demystifying Biostatistics in Medical Research</h3>
+            <p>An introduction to statistical tests commonly used in your MD/MS/DM/DNB thesis and how we can assist with interpretation.</p>
+        </article>
+    </div>
+</section>
+
 <section id="contact" class="section contact">
     <h2>Get in Touch</h2>
-    <p>Email:medthesispro@gmail.com</p>
+    <form action="mailto:medthesispro@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+    <p>Email: medthesispro@gmail.com</p>
     <p>Phone: +91-6375009443</p>
     <p>Location: Delhi | Mumbai | Bangalore | Online Support Across India</p>
 </section>
