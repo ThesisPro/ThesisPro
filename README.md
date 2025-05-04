@@ -91,8 +91,8 @@
 
 <section id="contact" class="section contact">
     <h2>Get in Touch</h2>
-    <p>Email: support@medthesispro.com</p>
-    <p>Phone: +91-9876543210</p>
+    <p>Email:medthesispro@gmail.com</p>
+    <p>Phone: +91-6375009443</p>
     <p>Location: Delhi | Mumbai | Bangalore | Online Support Across India</p>
 </section>
 
